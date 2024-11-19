@@ -1,0 +1,117 @@
+body
+{
+    background-color: #f3d0ff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+
+h2
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* 
+Le Média Query est une technique qui vise à changer le design d'un site internet selon les caractéristiques de l'écran utilisé. C'est un élément important du CSS3.
+Pour le faire on utilise les requêtes multimédia.
+Une requête multimédia permet d'appliquer des styles css en fonction de la présence ou de la valeur des caractéristique de l'appareil.
+Les requêtes multimédia peuvent être appliquées de 2 façons : 
+    -> En chargeant une feuille de style CSS différentes : ( pas recommandé car on essaie de centraliser notre style css autour d'une feuille de style)
+    <link rel="stylsheet" href="style.css"/>
+    <link rel="stylsheet" href="petite_resolution.css" media="screen and (max-width:1280px)"/> => pour les écrans qui ont une résolution inférieurs à 1280px
+    -> En écrivant directement les rêgles dans la feuille de style CSS:
+    Cette technique consiste à utiliser ce qu'on appelle les règles css @ : c'est les @rules( prononcez "at-rules") qui fournissent des instructions sur ce que css doit effectuer ou comment il doit se comporter si une condition est statisfaites.
+    Ici on utilise la @media : la règle pour inclure un bloc de propriétés css uniquement si une certaine condition est vraie .
+
+    -> les types d'écran ou les support d'affichages, il existe 4 cxatégories de media types : 
+        - print : déstiné pour un support paginé, au document vus sur écran en mode apercu avant inpression.
+        - screen : pour les appareils dotés d'un écran: ordinateur, tablettes, mobiles et tv 
+        - speech : pour les lecteurs d'écran qui "lisent" par synthése vovcale 
+        - all : tous les types d'appareils.
+    ->les propriétés: c'est par exemple une largeur de la zone d'affichage, la hauteur dela zonr d'affichage, une orientation du périphérique 
+*/
+
+
+/* Pour les très grands écrans (XX-Large) -> à partir de 1400px */
+@media(min-width:1400px) 
+{
+    body
+    {
+        background-color: pink;
+    }
+    .XLarge , .Large , .Meduim , .Small , .XSmall
+    {
+        display: none;
+    }
+}
+
+/* Pour les  grands écrans (X-Large) grand ordinateur de bureau-> entre 1200px et 1399px */
+@media(min-width:1200px) and (max-width:1399px)
+{
+    body
+    {
+        background-color: #ff65ad;
+    }
+    h2:not(.XLarge)
+    {
+        display: none;
+    }
+}
+
+
+/* Pour les écrans Large ex: ecran ordinateurs -> entre 992px et 1199px */
+@media(min-width:992px) and (max-width:1199px)
+{
+    body 
+    {
+        background-color: #fd6a65;
+    }
+    h2:not(.Large)
+    {
+        display: none;
+    }
+}
+
+/* Pour les écrans Meduim ex: Tablettes -> entre 768px et 991px */
+@media(min-width:768px) and (max-width:991px)
+{
+    body 
+    {
+        background-color: #ffe563;
+    }
+    h2:not(.Meduim)
+    {
+        display:none;
+    }
+}
+
+/* Pour les  appareils ex: smartphone -> entre 576px et 767px */
+@media(min-width:576px) and (max-width:767px)
+{
+    body 
+    {
+        background-color: #cfff88;
+    }
+    h2:not(.Small)
+    {
+        display: none;
+    }
+}
+
+/* Pour les petits appareils X-Small  -> inférieur ou égal à 575px */
+@media(max-width:575px)
+{
+    body 
+    {
+        background-color: #66f6cb;
+    }
+    h2:not(.XSmall)
+    {
+        display: none;
+    }
+}
