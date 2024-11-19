@@ -1,0 +1,19 @@
+h1
+    {
+        font-family: 'Dancing script', cursive;
+        text-transform: uppercase;
+        /* transformation du texte */
+    }
+
+h3
+    {
+        color: brown;
+        text-align: center;
+        font-style: italic;
+        font-weight:lighter;
+    }
+    
+ul li 
+    {
+        list-style-type: square;  
+    }

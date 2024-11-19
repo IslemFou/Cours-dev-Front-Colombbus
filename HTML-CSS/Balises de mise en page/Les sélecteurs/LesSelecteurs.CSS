@@ -1,0 +1,204 @@
+body
+{
+    background-color: bisque;
+}
+
+h1
+{
+    color: blueviolet;
+}
+
+div
+{
+    background-color: aquamarine;
+    width:50%;
+    padding: 1rem;
+}
+
+div p
+{
+    color: brown;
+}
+
+/* l'utilisation de Pseudo-class afin de Cibler le premier element du div qui est le premier p */
+div p:first-child
+{
+color: blue;
+}
+
+/* Cibler le paragraphe num 7 */
+div p:nth-child(7)
+{
+color: rgb(255, 111, 0);
+font-weight: bold;
+}
+/* Cibler le dernier p */
+
+div p:last-child
+{
+    background-color:rgb(0, 255, 106) ;
+}
+
+/* div : est pareil que div p: */
+
+/* Cibler les element de rang pair */
+div :nth-child(even)
+{
+    background-color: beige;
+}
+
+/* cibler les p de rang impair */
+div :nth-child(odd)
+{
+    color: rgb(10, 96, 46);
+}
+
+
+div :nth-child(3),div :nth-child(6)
+{
+    text-transform: uppercase;
+}
+
+/* Il faut coller section.select, pas d'espace */
+section.select p
+{
+    color: rgb(193, 16, 16);
+}
+
+section.select p:first-of-type,section.select p:last-of-type
+{
+    color: azure;
+}
+
+section.select p:nth-of-type(3)
+{
+    font-weight: bold;
+}
+
+section.select div
+{
+    /* text-transform: lowercase; */
+    font-style: italic;
+  font-variant: small-caps;
+} 
+
+/* L'addition de paramètre (cette paramètre est juste pour montrer */
+section div:not(.zoneB, .zoneB)
+{
+    font-weight: bolder;
+}
+
+section.select div.zoneA
+{
+    color:rgb(32, 190, 11);
+}
+
+#zoneD span
+{
+color: rgb(0, 8, 117);
+background-color: rgb(231, 219, 8);
+}
+
+section div#zone1
+{
+    height: 150px;
+    background-color: blanchedalmond;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#zone1 h3,#zone1 p
+{
+background-color: beige;
+color: black;
+}
+
+/* Les pseudo-elements :before et :before permettent de générer des éléments virtuels lors de l'interprétation du CSS */
+
+#zone1::before
+{
+    content: "Ceci est une décoration qui se place avant l'id : #zone1::before";
+    font-style: italic;
+    color: rgb(40, 40, 134);
+}
+
+#zone1::after
+{
+    content: "Ceci est une décoration qui se place après l'id : #zone1::after";
+    font-style: italic;
+    color: rgb(40, 40, 134);
+}
+
+p.psde
+{
+    background-color: rgb(207, 139, 49);
+}
+.signature
+{
+    background-color: bisque;
+}
+
+p.psde span
+{
+    position: relative;
+    /* background-color: beige; */
+}
+
+.signature .psde
+{
+    background-color:antiquewhite;
+}
+
+
+p.psde span::before
+{
+    /* Icône en CSS : touche Windows + ; (en même temps) */
+    content: "💕";
+    position: absolute;
+    top: -18px;
+    left: -75px;
+    transform: rotate(-5deg);
+}
+
+h4+p
+/* Sélectionne le premier enfant du titre h4 */
+{
+    font-weight: bold;
+}
+
+h4~a
+/* Selectionne toutes les balises ( ex: a ) située après h4 */
+{
+background-color: aquamarine;
+}
+
+ul > li
+/* Le > selectionne tout les élements li */
+{
+    list-style-type: square;
+    color: brown;
+}
+
+li::marker
+{
+    color: blue;
+}
+
+a[title]
+/* Cible tous les liens qui possèdent l'attribut title */
+{
+    background-color:rgba(192, 43, 226, 0.244);
+}
+
+/* Cibler l'element avec sa valeur */
+
+a[title="cliquez-ici"]
+{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+*{
+    margin: 0 40px;
+    border: 1px solid red;
+}

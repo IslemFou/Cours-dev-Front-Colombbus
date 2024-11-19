@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Les Images en HTML</title>
+    <link rel="stylesheet" href="images.CSS">
+</head>
+<body>
+    <h1>Les Images</h1>
+    <!-- <img> est utilisé pour intégrer une image dans une page web,l'<img> est une balise orpheline : <img src="url" alt="alternatetext"> 
+     L'attribut src spécifie le chemin (URL) de l'image.
+     l'attribut  alt fournit un texte alternatif pour l'image. Si un navigateur ne peut pas trouver une image, il affichera la valeur de l'attribut alt.-->
+     <section>
+        <h2>Premier cas: Image insérée depuis l'HTML </h2>
+        <!-- Chemin relatif de l'image ./img/ -->
+        <img src="./images_files/bg.jpg" alt="image nature nuit" >
+        <!-- chemin absolut de l'image https:// -->
+        <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg" alt="image chatton">
+        <!-- Infobulle: on ajout l'attribut title -->
+        <img src="https://plus.unsplash.com/premium_photo-1692878409569-699cfb9054c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" title="Image de rouge" >
+     </section>
+     <section>
+        <!-- difference between section and div
+        div is a generic container element that does not carry any semantic meaning. It is mostly used for grouping related elements together and applying styling to them via CSS. section , on the other hand, is a semantic element that represents a specific section of a web page with a distinct topic or purpose. 
+        -->
+        <h2>Deuxieme cas: Les Figures</h2>
+        <!-- L'élément HTML <figure> représente un contenu autonome, éventuellement accompagné d'une légende facultative, qui est spécifiée à l'aide de l'élément <figcaption>. La figure, sa légende et son contenu sont référencés comme une seule unité.
+         -->
+            <figure>
+                <img src="https://plus.unsplash.com/premium_photo-1692878409511-260fcd713f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D" alt="image piment" height="auto" width="200">
+                <figcaption><strong>Figure 1:</strong> Image artistique piment radis <a href="https://plus.unsplash.com/premium_photo-1692878409511-260fcd713f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D">source</a></figcaption>
+                </img>
+            </figure>
+     </section>
+     <section class="imageFond">
+        <h2>Troisième cas: Les images de fond insérées à travers le CSS</h2>
+        <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora deleniti nobis recusandae sapiente eum consequuntur laudantium? Corporis iste, nam laudantium ad esse consequatur, quos cumque facilis aut aliquam eum.
+        Iusto maxime excepturi dignissimos odio magnam! Quo itaque, numquam sit debitis doloribus consectetur odit, illo aut obcaecati incidunt eum esse! Nisi sed illo dicta temporibus ullam, ut aliquam consectetur dolorum!
+        Pariatur adipisci reprehenderit id? Fugit voluptates eaque quibusdam laboriosam quisquam explicabo, numquam possimus repellat ipsam? Asperiores alias, cupiditate accusantium ducimus ullam officiis, suscipit rem vero odio nobis explicabo. Velit, et!</p>
+     </section>
+     <section>
+      <h2>Images avec animations</h2>
+      <img src="./images_files/voiture.avif" alt="image voiture" class="imageHover">
+      <br>
+      <img src="./images_files/voiture.avif" alt="image voiture" class="imageHover rotation360">
+     </section>
+     <section class="voiture">
+      <h2>Images de type Block</h2>
+      <div>
+         <img src="./images_files/voiture.avif" alt="img voiture" title="Image dans une div">
+      </div>
+      <!-- On transforme la balise image inline vers block à travers le CSS -->
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+      <img src="./images_files/voiture.avif" alt="" title="Image de type block" class="voitureBlock">
+     </section>
+     <footer>
+      
+     </footer>
+</body>
+</html>

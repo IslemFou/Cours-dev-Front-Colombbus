@@ -1,0 +1,87 @@
+body
+{
+    background-color: beige;
+}
+
+h1
+{
+    font-size:40px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* propriétés en commun entre h1 et h2 */
+
+h1, h2
+{
+    color: brown;
+    font-weight: bold;
+    margin: 20px;
+}
+
+img
+{
+    border:5px solid rgb(209, 159, 255);
+    height:auto; 
+    width: 300px;
+    box-shadow: 10px 10px 5px rgba(239, 159, 255, 0.297);
+
+}
+
+.imageFond
+{
+    background-image:url(./images_files/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 16px;
+    padding: 20px;
+}
+
+.imageFond p
+{
+    width: 90%;
+    color: beige;
+    /* border: 2px solid rgba(234, 172, 246, 0.892); */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(187, 187, 91, 0.374);
+}
+
+.imageHover:hover
+{
+    transform: rotate(-7deg);
+    transition:1s;
+}
+
+.rotation360:hover
+{
+    transform: rotate(360deg);
+    transition:1s;
+}
+
+/* .voiture div
+{
+    border: 5px solid coral;
+} */
+
+.voiture img
+{
+    border: 5px solid rgb(0, 255, 187);
+}
+
+.voiture .voitureBlock
+{
+    border: 5px solid rgb(218, 61, 21);
+    margin: 25px;
+    /* On transforme le type de l'image de inline vers block  */
+    display: block;
+}
+
+
+/* Changer la largeur de l'image au survol */
+.voiture .voitureBlock:hover
+{
+    width: 450px;
+    margin-left: 80px;
+    transition:1s;
+}

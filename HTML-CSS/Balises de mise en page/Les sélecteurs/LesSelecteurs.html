@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Islem Fourati : Cours les sélecteurs en CSS">
+    <meta name="author" content="ISLEM FOURATI">
+    <title>Les Sélélecteurs en CSS</title>
+    <link rel="stylesheet" href="LesSelecteurs.CSS">
+</head>
+<body>
+    <h1>Les Sélécteurs CSS</h1>
+    <p>Un Sélécteurs est un moyen de sélectionner un élément en CSS. On connait déja les balises, les identifiants "id" et les classes.
+        Ils existes d'autres comme les pseudo classe mais aussi il y a les séléctions grace aux enfants. 
+    </p>
+    <div>
+        <p>Paragraphe 1 (div p:first-child)</p>
+        <p>Paragraphe 2</p>
+        <p>Paragraphe 3</p>
+        <p>Paragraphe 4</p>
+        <p>Paragraphe 5</p>
+        <p>Paragraphe 6</p>
+        <p>Paragraphe 7 (div p:nth-child(7))</p>
+        <p>Paragraphe 8</p>
+        <p>Paragraphe 9</p>
+        <p>Paragraphe 10 (div p:last-child)</p>
+    </div>
+    <hr>
+    <section class="select">
+        <h3>Les Classes</h3>
+        <p>Texte 1</p>
+        <p>Texte 2</p>
+        <p>Texte 3</p>
+        <p>Texte 4</p>
+        <p>Texte 5</p>
+        <p>Texte 6</p>
+        <p>Texte 7</p>
+        <p>Texte 8</p>
+        <p>Texte 9</p>
+        <p>Texte 10</p>
+        <div class="zoneA">ZONE A</div>
+        <div class="zoneB">ZONE B</div>
+        <div class="zoneB">ZONE C</div>
+        <div id="zoneD">
+            ZONE <span>D</span>
+            ZONE <span>D</span>
+            ZONE <span>D</span>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div id="zone1">
+            <h3>Titre de la zone1</h3>
+            <p>Zone 1, j'ai un identifiant zone 1 en utilisant les id dans le CSS.
+                <br>
+                exemple : #zone1 h3,#zone1 p
+            </p>
+        </div>
+        <hr>
+        <div class="signature">
+            <!-- p.psde>span -->
+            <p class="psde">Islem FOURATI - <span>Web Developer</span>
+            </p>
+        </div>
+    </section>
+<h4>Mardi le 15/10/2024</h4>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rerum repellat</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, ut?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ducimus.</p>
+<hr>
+<a href="#" title="Mon lien" >Lien 1</a>
+<a href="#">Lien 2</a>
+<a href="#" title="cliquez-ici" >Lien 3</a>
+<a href="#" title="Mon quatrième lien" >Lien 4</a>
+
+<hr>
+<ul>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+</ul>
+</body>
+</html>

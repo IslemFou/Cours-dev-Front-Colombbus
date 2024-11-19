@@ -1,0 +1,73 @@
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+body {
+        background:url(./imgs/bg.jpg) center/cover;
+        /* VH = 100% de la taille de l'écran (viewport height) */
+        min-height: 100vh;
+        /* letter-spacing: 20px; */
+    }
+
+h1 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border: 1px whitesmoke outset ;
+        /* Les tailles de polices doivent etre en REM */
+        font-size: 2.5rem;
+        text-align: center;
+        color:beige;
+    }
+
+main  { 
+
+        min-height: 500px;
+        width: 90%;
+        background: rgba(245, 245, 245, 0.9);
+        /* centrer une boite ou un bloc */
+        margin: 0 auto;
+        padding: 15px;
+        border: 2px solid rgb(0, 140, 255);
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 0 20px 4px #81cfc6
+    }
+
+h2 
+    {
+    margin: 0;
+    }
+
+.flexbox 
+    {
+        border: 2px solid greenyellow;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    /* Le flex box sert à répartir équitablement les éléments sur la page */
+
+.flexbox ul 
+    {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+.flexbox li 
+    {
+        list-style: none;
+        height: 160px;
+        width: 160px;
+        background-color: aquamarine;
+        margin: 10px;
+        /* centrer un unique element verticalement et horizontalement */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

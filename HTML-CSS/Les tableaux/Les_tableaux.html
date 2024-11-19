@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les tableaux en HTML</title>
+    <link rel="stylesheet" href="./Les_tableaux.CSS" />
+  </head>
+
+  <body>
+    <h1>Tableau pour les données "tabulaire"</h1>
+    <table>
+      <!-- <caption> Titre du tableau (la légende) -->
+      <caption>
+        <em>Vente de la semaine</em>
+      </caption>
+      <!-- Le <thead> est l'entete du tableau -->
+      <thead>
+        <tr>
+          <!-- <th> cellule d'entête -->
+          <th>Jour</th>
+          <th>Smartphone</th>
+          <th>Tablette</th>
+          <th>Ordinateur</th>
+          <th>Montre connecté</th>
+        </tr>
+      </thead>
+      <!-- <tbody> est pour le corps du tableau -->
+      <tbody>
+        <tr>
+          <td>Lundi</td>
+          <td>10</td>
+          <td>5</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Mardi</td>
+          <td>12</td>
+          <td>5</td>
+          <td>7</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Mercredi</td>
+          <td>10</td>
+          <td>8</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Jeudi</td>
+          <td>10</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot> le footer du tableau -->
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>42</td>
+          <td>23</td>
+          <td>16</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <h2>Rowspan et Colspan</h2>
+    <table>
+      <caption>
+        <em>Rowspan table</em>
+      </caption>
+      <tr>
+        <td>Nom</td>
+        <td>Mozart</td>
+      </tr>
+      <tr>
+        <td rowspan="2">E-mail(rowspan)</td>
+        <td>mozart@gmail.com</td>
+      </tr>
+      <tr>
+        <td>E-mail@email.com</td>
+      </tr>
+    </table>
+    <h4>Tableau avec Colspan</h4>
+    <table>
+      <caption>
+        <em>Colspan table</em>
+      </caption>
+      <tr>
+        <td colspan="2"><strong>Islem Fourati's emails</strong></td>
+      </tr>
+      <tr>
+        <td>islemFou@gmail.com</td>
+        <td>fourati.islem@outlook.fr</td>
+      </tr>
+    </table>
+  </body>
+</html>

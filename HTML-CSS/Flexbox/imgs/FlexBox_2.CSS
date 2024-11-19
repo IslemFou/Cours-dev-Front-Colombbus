@@ -1,0 +1,103 @@
+/* Le principe de flexbox :permet de passer d'un contexte bloc à un contexte flex. Pour le faire, il faut appliquer  */
+section p
+{
+    font-size: 20px;
+}
+
+section span
+{
+    font-weight: bold;
+}
+div
+/* Texte à l'intéteur du div : Element 1, 2,3 
+Ces élements, s'appellent "items" existent à l'intérieur du contentaire(.style)  et qui vont subir la distribution exercée par l'élement parent (le contenaire .style ).
+
+*/
+{
+    color:rgb(19, 27, 35);
+    font-weight: bold;
+}
+.style 
+/* Le contenaire, l'élement parent, c'est ici on applique le flex.
+Par défaut, dans le contexte flex, on va aoir un axe principal qui est par défaut: Horizontal et commence à gauche.  */
+{
+    border: 2px solid blue;
+}
+.style div
+{
+    border-radius: 1.5rem;
+    width: 200px;
+    height: 150px;
+    margin: 0 1rem;
+    display: flex;
+    /* Pour centrer le texte */
+    justify-content: center;
+    align-items: center;
+}
+.style :nth-child(1)
+{
+    background-color: rgb(254, 213, 137);
+}
+.style :nth-child(2)
+{
+    background-color: rgb(252, 146, 146);
+}
+.style :nth-child(3)
+{
+    background-color: rgb(127, 127, 246);
+}
+.style :nth-child(4)
+{
+    background-color: rgb(127, 246, 181);
+}
+.style :nth-child(5)
+{
+    background-color: rgb(246, 127, 161);
+}
+.style :nth-child(6)
+{
+    background-color: rgb(246, 185, 127);
+}
+.style :nth-child(7)
+{
+    background-color: rgb(127, 246, 236);
+}
+
+
+/* Application de Flex */
+
+#contenaireB
+{
+    display: flex;
+    /* C'est une instruction à donner au parent "contenaireB".
+    Suite à cette application, le comportement des éléments qui se situent dans "contenaireB" a changé de dispositions pour devenir cote à cote.
+     */
+}
+/* Flex column */
+#Flex-Column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* flex-direction : row-reverse */
+#row-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* column reverse */
+#Column-reverse
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Le Wrap */
+#Wrap
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}

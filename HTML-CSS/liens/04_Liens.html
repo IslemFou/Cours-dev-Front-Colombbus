@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Liens_css.CSS">
+    <title>Cours les Liens</title>
+</head>
+<body>
+    <p id="haut">---Haut de page---</p>
+    <h1>Les Liens</h1>
+    <h2>Mes sites / Liens préférée</h2>
+    <!-- Le lien est un élément cliquable qui renvoie l'utilisateur sur une partie de la page, une nouvelle page ou aussi lui permet de télécharger un fichier. 
+     Pour créer un lien, on utilise la balise <a> il faut cepandant lui ajouter un attribut "href" pour indiquer vers quelles page ou lien. Il peut renvoyer:
+       1-> vers un autre site (Lien externe) lien absolu: -- ex:https://youtube.com 
+        2->vers une autre page du site (Lien interne) -> lien relatif -- ex:mapage.html 
+        3->vers un fichier (image, pdf,...)
+        -->
+    <h3>Lien vers une ancre</h3>
+    <p>Aller vers le bas de la page <a href="#bas">Bas de page</a></p>
+    <h3>Lien externe</h3>
+    <a href="https://www.youtube.com" target="_blank">Mon lien vers YouTube</a>
+    <!-- Pour que le lien s'ouvre dans un nouvel onglet: L'attribut target="_blank" -->
+     <a href="https://www.750g.com">750g</a>
+     <!-- Des éléments inline, ils se mettent cote a cote
+     On met le lien dans une balise block 
+     -->
+     <p>Je veux <a href="https://www.750g.com">750g</a>
+        <a href=""></a> de Farine pour la crêpe.
+     </p>
+     <!-- Lien avec infobulle sur un état de survol -->
+      <a href="https://www.750g.com/crêpe-salee-r7162.htm" target="_blank" title="Crêpe salé à l'harissa">En savoir plus sur la crêpe salée</a>
+      <h4>Deux pages située dans le même dossier</h4>
+      <p>Découvrez les balises de mise en page sur <a href="./Balises de mise en page/02_les balises_de_mise_en_page.html" target="_blank">La page suivante</a></p>
+      <p><a href="../cours-HTML_CSS/03_Liste.html" target="_blank">Lien vers le dossier parent avec ../ </a></p>
+      <h4>Une page située dans un sous dossier</h4>
+      <p>Lien qui me ramène à une page existe dans un sous-dossier Balises de mise en pages/media > <a href="./Balises de mise en page/media/image.jpg" target="_blank">Le dossier media</a></p>
+      <h3>Lien vers une adresse email</h3>
+      <p><a href="mailto:islem.fourati@colombbus.org">Envoyer un email à Islem FOURATI colombbuss</a></p>
+      <h3>Lien vers un numéro de téléphone</h3>
+      <p><a href="tel:0762334426">Appelez-moi</a></p>
+      <h3>Lien de chargement de fichier</h3>
+      <p><a href="./Documents/keyboard-shortcuts.pdf" target="_blank">Ouvrir le fichier PDF</a></p>
+      <p><a href="./Balises de mise en page/media/VideoParis.mp4" target="_blank">Vidéo</a></p>
+      <h3>Lien vers une ancre</h3>
+      <p>Aller vers le bas de la page <a href="#bas">Bas de page</a></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quam minima repudiandae, illum amet cumque praesentium nam ipsum officia reprehenderit earum, explicabo magni dolorem sed? Enim magnam odio esse.
+      Asperiores minus dignissimos, architecto culpa soluta esse ab vero iure corporis at quaerat veritatis sunt iusto amet exercitationem accusantium eaque obcaecati nemo vel ea sit! Saepe placeat dolore rem culpa.
+      Animi temporibus aperiam voluptates, sequi, soluta recusandae perferendis placeat iste pariatur nemo architecto, laboriosam assumenda sapiente odit nulla quod illum quo sit! At commodi laboriosam facilis neque ducimus. Quis, nesciunt.
+      </p>
+<p>Un lien pour aller vers le haut de la page <a href="#haut">Haut de page</a></p>
+<p id="bas">---Le bas de la page---</p>
+</body>
+</html>

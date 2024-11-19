@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    box-sizing: border-box;
+    /* La largeur de l'élément s'adapte par rapport aux éléments à l'intérieur */
+    margin: 0;
+    padding:0;
+    color: rgb(29, 29, 29);
+   
+}
+
+#logo
+{
+    font-family: "Dancing Script", cursive;
+
+}
+
+header ul
+{
+    margin: 0;
+    padding: 0; 
+    /* Le padding :0 masque les puces de la liste */
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    /* Pour que le space-between sera vue on spécifie le width */
+    width: 450px;
+    /* IL faut définir une largeur pour voir la ppté */
+    font-size: .5rem;
+}
+
+header a
+{
+text-decoration: none;
+font-size: .5rem;
+color: rgb(26, 26, 26);
+/* font-weight: bold; */
+display: inline-block;
+/* Afin de transformer le type de a vers inline block pour appliquer le padding sur le a */
+padding: 1rem;
+/* text-wrap: balance; */
+}
+
+header a:hover
+{
+   text-decoration: underline; 
+}
+
+
+header nav
+{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+/* Image principale */
+#imagePrincipale
+{
+    background: url("../img/image-principale.JPG") no-repeat fixed 50% 50% ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    
+}
+
+#premierTrait
+{
+height:.1rem;
+width: 25%;
+background-color: antiquewhite;
+margin:1rem auto;
+box-shadow:1px 1px 5px rgba(193, 186, 124, 0.673);
+}
+
+
+
+h1, h3
+{
+    text-align: center;
+    font-size: 5rem;
+    color: antiquewhite;
+    text-shadow:1px 1px 5px rgba(193, 186, 124, 0.673);
+    font-family: "Dancing Script", cursive;
+}
+
+h3, h2
+{
+    font-size:2rem;
+    font-family: "Advent Pro", sans-serif;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+#presentation
+{
+    background-color: antiquewhite;
+    padding: 3rem;
+}
+
+#textIntro 
+{
+    padding: 0 auto;
+    margin: 1rem;
+    text-align: center;
+    text-justify:distribute-all-lines;
+    line-height: 1.6;
+    letter-spacing: .5px;
+}
+
+
+#prestation
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+#prestation img
+{
+    border-radius: 1rem;
+    /* box-shadow: 4px 5px 10px 4px rgba(80, 79, 79, 0.549); */
+    transition: .6s ease-in-out;
+    /* il faut la mettre dans le parent */
+
+}
+
+#prestation img:hover
+{
+    
+    transform: scale(1.05);
+    box-shadow: 4px 5px 10px 4px rgba(80, 79, 79, 0.549);
+    opacity: .5;
+    
+}
+
+#prestation h4
+{
+    text-align: center;
+    padding: 1rem;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Section 2 */
+
+#decouvrir
+{
+    margin: 0 auto;
+    width: 95%;
+}
+h2
+{
+    text-align: center;
+}
+
+.element
+{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    align-items: center;
+    width: 100%;
+}
+
+.element img
+{
+    box-shadow:1px 1px 5px rgba(193, 186, 124, 0.673);
+}
+
+.element p
+
+{
+    padding: 1.5rem;
+    background-color: rgb(92, 180, 92);
+    transform: translateX(-3rem);
+    box-shadow:1px 1px 5px rgba(193, 186, 124, 0.673);
+}
+
+.element .vert
+{
+    transform: translateX(40px);
+    background-color: aqua;
+}
+
+.element:nth-child(odd)
+{
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+/* footer */
+
+footer
+{
+    padding-top: 1rem;
+    background-color: antiquewhite;
+}
+
+form
+{
+    text-align: center;
+}
+input,textarea 
+{
+    background-color: rgb(254, 248, 233);
+    border: 1px solid rgb(180, 132, 129);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 60%;
+    margin:.5rem;
+}
+
+ input[type="submit"]
+{
+    background-color: brown;
+    width: 30%;
+    color: aliceblue;
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover
+{
+    box-shadow:1px 1px 5px rgba(230, 93, 65, 0.673);
+}
+
+footer div
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+min-height: 10vh;
+margin-top: 2rem ;
+}
+footer div a
+{
+   font-family: "Advent Pro", sans-serif;
+   text-decoration: none; 
+}

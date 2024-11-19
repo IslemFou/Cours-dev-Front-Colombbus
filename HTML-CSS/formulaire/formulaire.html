@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Formulaires en HTML</title>
+    <style>
+fieldset
+{
+    background-color: rgb(172, 248, 222);
+    width: 70%;
+    box-shadow:2px 3px 8px 3px #ffb59a7e;
+    border-radius: 8px;
+}
+
+form
+{
+    display: flex;
+    justify-content: center
+}
+legend
+{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow:2px 3px 8px 3px #ffb59a;
+}
+input {
+    background-color: rgb(241, 229, 182);
+    border-radius: 8px;
+}
+h1
+{
+    text-align: center;
+}
+    </style>
+    
+</head>
+<body>
+    <h1>Mon premier formulaire en HTML</h1>
+    <!-- Un formulaire HTML est utilisé pour collecter les entrées des utilisateurs. L'entrée de l'utilisateur est le plus souvent envoyé à un serveur pour traitement (en PHP par exemple): login, formulaire de contact ou meme le chat.
+     On déclare un formulaire avec la balise <form>.
+       L'élément <form> est un conteneur pour différents types d'éléments d'entrée, tels que: champs de texte, cases à cocher, radio boutons, boutons de soumission, etc.
+        La balise <form> fonctionne avec deux attributs essentielles:
+            1- action: définit l'action à effectuer lors de la soumission du formulaire. Habituellement, les données du formulaire sont envoyées à un fichier sur le serveur lorsque l'utilisateur clique sur le bouton de soumission.
+            Il prend l'adresse de la page ou le fichier qui va traiter les données saisies par l'utilisateur à travers le formulaire.
+            2- method: cet attribut spécifie le HTTP Méthode à utiliser lors de la soumission des données du formulaire.Les données-form peuvent être envoyées sous forme de variables URL (avec method="get") ou en tant que HTTP après transaction (avec method="post"). 
+            La méthode HTTP par défaut lors de la soumission des données de formulaire est GET. 
+            _Dans le cadre d'une inscription sur un site on envoie les données vers la base de donnée.
+            _Dans le cadre d'une connection, on récupère et on vérifie les données qui se trouvent déjà dans cette BD.
+            *L'attribut method="Get" l'information se passe dans la barre d'adresse HTTP.
+            *La method=POST envoie les données dans le core de la requete sans passer par la barre d'adresse(méthode la plus sécurisée).
+            3- enctype="multipart/form-data" : on l'utilise dans le cadre d'un champ d'envoie de fichier dans le formulaire.
+        -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <!-- cette balise permet d'assembler des éléments de notre formulaire lorsqu'ils sont en lien -->
+             <legend>Inscription</legend>
+             <label for="nom">Nom</label>
+             <!-- Label désigne l'étiquette du champ, elle permet de définir et d'informer sur l'info attendue -->
+             <input type="text" id="nom" name="nom" placeholder="votre nom" required>
+             <!-- Input est un élément de saisie de formulaire.
+              Une <input> est un élément peut être affiché en de nombreuses manières, en fonction de l'attribut : type. 
+              _Les attributs id et name sont recommandée ! et ils doivent avooir la même valeur que l'attribut for de la balise label.
+              _Input avec type de Texte: est une zone de texte monoligne
+              _Name sert à récupérer la valeur saisie par l'utilisateur en php (pas d'espace, ni accent, ni caractère spécial)
+              _placeholder, exemple de contenu valable, information vers l'utilisateur de ce qui est attendue.
+              _Required, indique que le champ doit etre renseignée, c'est un attribut sans valeur.
+        -->
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="votre prénom" required maxlength="15">
+            <!-- maxlength: le nom de caractère maximal à saisir -->
+        <br>
+        <div>
+            <label for="dateDeNaiss">Votre Date de Naissance</label>
+            <input type="date" id="dateDeNaiss" name="dateDeNaiss">
+            <!-- Type date permet d'afficher un calendrier pour choisir une date -->
+             <br>
+            <div>
+                <label for="age">Votre âge</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+                <!-- type number permet d'entrer seulement un nombre -->
+            </div>
+            <br>
+            <!-- div>label+input -->
+             <div>
+                <input type="radio" id="moins15" name="age" value="moins15">
+                <label for="moins15">J'ai moin de 15 ans </label>
+            </div>
+            <div>
+                <input type="radio" id="meduim15-25" name="age" value="meduim15-25" checked>
+                <label for="meduim15-25">Entre 15 - 25 ans</label>
+            </div>
+            <div>
+                <input type="radio" id="meduim26-40" name="age" value="meduim26-40">
+                <label for="meduim26-40">Entre 26 - 40 ans
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="plusDe40" name="age" value="plusDe40">
+                <label for="plusDe25">Plus de 40 ans</label>
+            </div>
+        </div>
+        <!-- Le champ: zone d'options/ bouton radio lorsqu'on fait boutons de type Radio cela signifie qu'un seul bouton à cocher de celui qui a l'attribut checked.
+          -->
+        <br>
+        <div>
+            <label for="pseudo">Pseudo</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Trouvez-vous un Pseudo">
+        </div>
+        <br>
+        <div>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" name="mdp" placeholder="Saisissez une mot de passe" required>
+        </div>
+            <!-- type password permet de masquer le mot de passe -->
+        <br>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="nom@email.com">
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="Telephone">Téléphone</label>
+            <input type="tel" id="Telephone" name="Telephone" pattern="^[0-9]{102526}$">
+            <!-- Type Tél: permet de faire afficher les claviers chiffrés pour les smartphones
+             -pattern: une expression rationnelle -->
+        </div>
+        <br>
+        <div>
+            <label for="photo">Photographie</label>
+            <input type="file" id="photo" name="photo">
+            <!-- Le <input type="file"> définit un champ de sélection de fichier et un bouton "Browse" pour les téléchargements de fichiers. -->
+        </div>
+        <br>
+        <div>
+            <label for="question">Choisissez votre destination : </label>
+            <div>
+                <input type="checkbox" name="question" id="" value="Dubai" checked> Dubai 
+                <input type="checkbox" name="question" id="" value="Tanzanie"> Tanzanie 
+                <input type="checkbox" name="question" id="" value="Laponie"> Laponie 
+                <!--  <input type="checkbox">définit une case à cocher.Les cases à cocher permettent à un utilisateur de sélectionner des options « ERO ou PLUS» d'un nombre limité de choix. -->
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="pays">Vous résdiez en :</label>
+            <select name="pays" id="pays">
+                <option value="">Choisir mon pays</option>
+                <optgroup label="Europe">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="belgique">Belgique</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="brésil">Brésil</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="chine">Chine</option>
+                    <option value="japon">Japon</option>
+                </optgroup>
+            </select>
+            <!-- La balise select vient toujours avec des balises option: elle permet de créer un menu déroulant -->
+        </div>
+        <br>
+        <!-- Envoie du formulaire -->
+         <input type="submit" name="inscription" value="S'inscrire">
+         <!-- reset / effacer le formulaire-->
+          <input type="reset" name="annuler" value="Effacer">
+         <!-- bouton désactivé -->
+          <input type="button" value="Inactif" disabled>
+<!-- D'autres type d'input formulaire:
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+  -->
+        </fieldset>
+    </form>
+</body>
+</html>

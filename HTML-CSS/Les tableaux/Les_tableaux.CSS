@@ -1,0 +1,48 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: beige;
+    width: 50%;
+    margin: 0 auto;
+    /* Il faut avoir un width pour pouvoir centrer avec le margin 0 auto */
+    /* padding-bottom: 2rem; */
+}
+
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(124, 205, 201, 0.337);
+    border-collapse: collapse;
+    width: 90%;
+}
+
+caption {
+    background-color: bisque;
+    font-weight: bold;
+    border: 2px solid rgb(201, 87, 106);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+tfoot {
+    background-color: beige;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+th {
+    padding: 1rem;
+    background-color: aquamarine;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 0.5rem;
+}

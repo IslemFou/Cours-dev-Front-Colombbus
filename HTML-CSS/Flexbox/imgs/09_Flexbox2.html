@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="./FlexBox_2.CSS" />
+  </head>
+  <body>
+    <h1>Cours FlexBox</h1>
+    <section>
+      <h2>A - Comportement normal</h2>
+      <p>
+        Le principe de la mise en page avec FlexBox est simple : vous définissez
+        un contenaire et à l'intérieur de ce contenaire vous placez plusieurs
+        éléments.
+        <br />
+        <em
+          >La création d'un contenaire permet de s'ajuster et appliquer les
+          règles de FlexBox par rapport aux éléments à l'intérieur.</em
+        >
+      </p>
+      <div class="style" id="contenaireA">
+        <div>Ceci est un comportement(normal) par défaut des div</div>
+        <div>Ceci est un comportement par défaut des div</div>
+        <div>Ceci est un comportement par défaut des div</div>
+      </div>
+    </section>
+    <section>
+      <h2>B - Ajout de flex au contenaire</h2>
+      <p>
+        La propriété <span> {display : flex;}</span> permet d'appliquer le flex
+        sur les éléments qui se situent à l'intérieur du contenaire
+      </p>
+      <!-- Création de flex -->
+      <div class="style" id="contenaireB">
+        <div>Element Flex 1</div>
+        <div>Element Flex 2</div>
+        <div>Element Flex 3</div>
+      </div>
+    </section>
+    <section>
+      <h2>C - Direction de Flex</h2>
+      <p>
+        FlexBox nous permet d'organiser ses éléments dans le sens désiré. Avec
+        <span>flex-direction</span> on peut positionner nos éléments d'une façon
+        par exemple : verticale : column.
+        <br />
+        <span><u>Flex-direction</u></span> peut prendre les valeurs suivantes:
+        <br />
+        <span>row :</span> les éléments s'organisent en horizontale (par
+        défaut).
+        <br />
+        <span>column : </span> les éléments s'organisent en verticale.
+        <br />
+        <span>row-reverse : </span> les élément s'alignent vers le sens
+        horizontal mais inversé l'ordre des éléments.
+        <br />
+        <span>Column-reverse : </span>les élément s'alignent vers le sens
+        vertical mais l'ordre est inversé.
+      </p>
+      <h3>Flex Column</h3>
+      <div class="style" id="Flex-Column">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+      </div>
+      <h3>Flex Column : row-reverse</h3>
+      <div class="style" id="row-reverse">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+      </div>
+      <h3>Flex Column : column-revese</h3>
+      <div class="style" id="Column-reverse">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+      </div>
+    </section>
+    <section>
+      <h2>D - Les Wrap : retour à la ligne</h2>
+      <p>
+        La propriété <span>flex-wrap</span> indique si les éléments flexibles
+        sont contraints à être disposés sur une seule ligne ou s'ils peuvent
+        être affichés sur plusieurs lignes avec un retour automatique. Si le
+        retour à la ligne est autorisé, la propriété permet également de
+        contrôler la direction dans laquelle les lignes sont empilées.
+        <br />
+        Les valeurs:
+        <br />
+        <span>Valeurs avec un mot-clé</span>
+        <br />
+        flex-wrap: nowrap; <em>Valeur par défaut</em>
+        <br />
+        flex-wrap: wrap;
+        <br />
+        flex-wrap:wrap-reverse;
+        <br />
+        <span>Valeurs globales </span>
+        <br />
+        flex-wrap: inherit;
+        <br />
+        flex-wrap: initial;
+        <br />
+        flex-wrap: unset;
+      </p>
+      <div class="style" id="Wrap">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+        <div>Flex 4</div>
+        <div>Flex 5</div>
+        <div>Flex 6</div>
+        <div>Flex 7</div>
+      </div>
+    </section>
+  </body>
+</html>

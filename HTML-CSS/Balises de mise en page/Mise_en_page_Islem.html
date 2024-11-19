@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Islem Fourati : Cours mise en page html">
+    <meta name="author" content="ISLEM FOURATI">
+    <title>COURS HTML DE ZERO</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./html-icon.svg">
+</head>
+<body>
+     <!-- Création de liste -->
+    <nav>
+        <ul>
+            <li>Acceuil</li>
+            <li>boutique</li>
+            <li>formulaire</li>
+        </ul>
+    </nav>
+    <header>
+        <!-- un seul H1 par page -->
+         <h1>Ceci est le titre principale</h1>
+         <p><strong>Lorem ipsum</strong> <em>dolor sit amet consectetur adipisicing elit</em>. Quod reiciendis corporis est ex nam officiis animi eius itaque ut necessitatibus suscipit architecto sed, id quo doloribus. Reprehenderit excepturi placeat sapiente.
+         Ut aliquam ex incidunt sunt itaque molestiae placeat nostrum vel, blanditiis labore voluptates eum fugit magni numquam delectus dolor ducimus consequuntur perferendis quaerat accusantium pariatur ea in voluptatum officia. Quasi?
+         Ullam quod iure tempore quo dicta eos, velit autem natus temporibus placeat dolore accusantium veniam nisi assumenda? Ex nam culpa enim at explicabo molestiae numquam. Quasi praesentium nulla eveniet aperiam.
+         Neque ducimus ratione sunt maiores. Eligendi, enim. Ex error maxime velit! Veniam, perferendis. Iste nesciunt tenetur minima, error perspiciatis alias minus aut fugit, nam impedit consequatur, consectetur harum pariatur facilis.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Ordered list</h2>
+            <ol>
+                <li>Ceci est une</li>
+                <li>liste</li>
+                <li>dans l'ordre</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Image en HTML </h3>
+            <img src="./image.jpg" alt="image-section" height="200">
+            <div>
+                <h4>Tableaux</h4>
+                <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
+                    <!-- thead est pour l'entete du tableau  -->
+                    <thead>
+                        <tr>
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th colspan="2">Col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Cell 1</td>
+                            <td>Cell 2</td>
+                            <td rowspan="2">Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td >Cell 4</td>
+                            <td rowspan="2">Cell 5</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+            <div>
+                <h5>Les liens</h5>
+                <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
+            </div>
+            <div>
+                <h2><i>&#127849;</i>Vidéo</h2>
+                <video src="./VideoParis.mp4" height="200" controls autoplay muted loop>Paris la tour-Eiffel</video>
+            </div>
+        </section>
+        <section>
+            <h2>Les Formulaires</h2>
+            <form action="">
+                <!-- "for"et"id" permettent de lier le label à l'input -->
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="entrer votre Nom">
+                <br>
+                <label for="age">Entrer votre age</label>
+                <input type="number" id="age" value="18">
+                <br>
+                <!-- input de type select  -->
+                <label for="gender">Genre</label>
+                <select name="" id="gender">
+                    <option value="">Homme</option>
+                    <option selected value="">Femme</option>
+                    <option value="">Autre</option>
+                </select>
+                <!-- input de type radio  -->
+                 <div>
+                    <input type="radio" name="type" id="human" checked>
+                    <label for="human">Humain</label>
+
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">Chien</label>
+
+                    <input type="radio" name="type" id="cat">
+                    <label for="cat">Chat</label>
+                 </div>
+                 <textarea name="" id="" placeholder="Votre message..." cols="20" rows="5"></textarea>
+                 <br>
+                 <!-- input de type checkbox  -->
+                  <input type="checkbox" name="" id="cgv">
+                  <label for="cgv">Accepter les conditions générales</label>
+            </form>
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+</body>
+</html>
